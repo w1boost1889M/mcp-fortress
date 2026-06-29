@@ -44,15 +44,4 @@ ENV MCPSHIELD_AUDIT_LOG=/app/logs/audit.jsonl
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
 CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8100/api/v1/health')"
 
-CMD [
-    "mcp-fortress",
-    "proxy",
-    "--upstream",
-    "http://localhost:3000",
-    "--host",
-    "0.0.0.0",
-    "--port",
-    "8100",
-    "--policy",
-    "/app/config/policy.yaml"
-]
+CMD ["mcp-fortress", "proxy", "--upstream", "http://localhost:3000", "--host", "0.0.0.0", "--port", "8100", "--policy", "/app/config/policy.yaml"]
