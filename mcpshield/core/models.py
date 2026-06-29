@@ -1,4 +1,4 @@
-# MCP-Fortress — by Avoceous (https://github.com/Avoceous) | MIT License
+# MCP-Fortress — by Avoceous w1boost1889M & Jerimoth Lau | MIT License
 """
 Core data models for MCP-Fortress.
 All stdlib — zero external dependencies.
